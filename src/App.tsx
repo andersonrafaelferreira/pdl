@@ -6,6 +6,11 @@ import logo from './assets/images/iguatemi.png'
 function App() {
   const [username, setUsername] = useState('')
 
+  function ejectData() {
+    event?.preventDefault()
+    console.log('data here');
+  }
+
   return (
     <main>
     <div className="box">
@@ -15,7 +20,7 @@ function App() {
       <div className="loginBox">
         
 
-        <form action="">
+        <form action="" onSubmit={ejectData}>
         <h1 className='title'>Bem-vindo</h1>
         <p className='description'>Portal do Lojista, para acessar insira seus dados.</p>
         <label htmlFor="">

@@ -105,9 +105,13 @@ label{
 /* up down */
 
 main{
+
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background-image: url(./assets/images/background_ig.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box{
